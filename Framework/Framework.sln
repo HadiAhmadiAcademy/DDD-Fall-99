@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29411.108
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{26A7983F-550C-4E67-A3A0-1B7815396832}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{04D061D4-9298-4647-8AEA-A016A2FE6720}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Framework.Domain", "src\Framework.Domain\Framework.Domain.csproj", "{82965E2F-E845-4CA9-9B27-996BD75C1932}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Framework.Core", "src\Framework.Core\Framework.Core.csproj", "{82EE8930-A4E4-46DE-8EF0-4BE34CF52CE4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_build", "buildscript\_build.csproj", "{FA2B3A7D-B801-4546-BFE9-E98AFE569787}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{359F6050-86ED-437B-8A87-648F1222E22C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Framework.Persistence.Mongo", "src\Framework.Persistence.Mongo\Framework.Persistence.Mongo.csproj", "{8EAA6067-91FD-4B3A-995F-0F86CB30F846}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82965E2F-E845-4CA9-9B27-996BD75C1932}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82965E2F-E845-4CA9-9B27-996BD75C1932}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82965E2F-E845-4CA9-9B27-996BD75C1932}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82965E2F-E845-4CA9-9B27-996BD75C1932}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82EE8930-A4E4-46DE-8EF0-4BE34CF52CE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82EE8930-A4E4-46DE-8EF0-4BE34CF52CE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82EE8930-A4E4-46DE-8EF0-4BE34CF52CE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82EE8930-A4E4-46DE-8EF0-4BE34CF52CE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA2B3A7D-B801-4546-BFE9-E98AFE569787}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA2B3A7D-B801-4546-BFE9-E98AFE569787}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EAA6067-91FD-4B3A-995F-0F86CB30F846}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EAA6067-91FD-4B3A-995F-0F86CB30F846}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EAA6067-91FD-4B3A-995F-0F86CB30F846}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EAA6067-91FD-4B3A-995F-0F86CB30F846}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{82965E2F-E845-4CA9-9B27-996BD75C1932} = {26A7983F-550C-4E67-A3A0-1B7815396832}
+		{82EE8930-A4E4-46DE-8EF0-4BE34CF52CE4} = {26A7983F-550C-4E67-A3A0-1B7815396832}
+		{FA2B3A7D-B801-4546-BFE9-E98AFE569787} = {359F6050-86ED-437B-8A87-648F1222E22C}
+		{8EAA6067-91FD-4B3A-995F-0F86CB30F846} = {26A7983F-550C-4E67-A3A0-1B7815396832}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8963A70C-B379-4DED-8BB9-3B29C8527B8E}
+	EndGlobalSection
+EndGlobal

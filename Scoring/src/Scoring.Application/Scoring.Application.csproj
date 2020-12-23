@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Scoring.Application.Contracts\Scoring.Application.Contracts.csproj" />
+    <ProjectReference Include="..\Scoring.Domain\Scoring.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
