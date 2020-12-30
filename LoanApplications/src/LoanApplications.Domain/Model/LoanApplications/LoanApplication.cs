@@ -8,6 +8,7 @@ namespace LoanApplications.Domain.Model.LoanApplications
         public long Id { get; private set; }
         public long ApplicantId { get; private set; }
         public long Amount { get; private set; }
+        //Payback....
         public Percent InterestRate { get; private set; }
         public LoanApplication(long id, long applicantId, long amount)
         {
@@ -15,6 +16,9 @@ namespace LoanApplications.Domain.Model.LoanApplications
             ApplicantId = applicantId;
             Amount = amount;
         }
-
+        public void SetInterestRate(Percent interestRate)
+        {
+            this.InterestRate = interestRate;
+        }
     }
 }

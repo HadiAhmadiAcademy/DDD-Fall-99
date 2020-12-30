@@ -9,15 +9,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{BCEADE03-333
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{0475F28E-523F-42A4-8933-597F954C7C99}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoanApplications.Domain", "src\LoanApplications.Domain\LoanApplications.Domain.csproj", "{29077F75-972A-42BE-886C-590C4BB2339A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoanApplications.Domain", "src\LoanApplications.Domain\LoanApplications.Domain.csproj", "{29077F75-972A-42BE-886C-590C4BB2339A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoanApplications.Domain.Tests.Unit", "test\LoanApplications.Domain.Tests.Unit\LoanApplications.Domain.Tests.Unit.csproj", "{1AC74FC3-E7AA-47B9-92D5-2127219E5765}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoanApplications.Domain.Tests.Unit", "test\LoanApplications.Domain.Tests.Unit\LoanApplications.Domain.Tests.Unit.csproj", "{1AC74FC3-E7AA-47B9-92D5-2127219E5765}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{5FE7A5B6-8B09-4108-8B42-B8FC6A62F76A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{37B4DB93-CBD1-41F1-8095-3F08BFDD8400}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoanApplications.Infrastructure.ACL.Scoring", "src\LoanApplications.Infrastructure.ACL.Scoring\LoanApplications.Infrastructure.ACL.Scoring.csproj", "{F40277D4-FFE3-4382-8FEB-D846FE38ACBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoanApplications.Application", "src\LoanApplications.Application\LoanApplications.Application.csproj", "{8E37C511-DC4A-45AD-9381-0C5A8ECFB4BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoanApplications.Application.Contracts", "src\LoanApplications.Application.Contracts\LoanApplications.Application.Contracts.csproj", "{BAF77D49-BE9D-45F0-99FC-C85E983D8D69}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +41,14 @@ Global
 		{F40277D4-FFE3-4382-8FEB-D846FE38ACBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F40277D4-FFE3-4382-8FEB-D846FE38ACBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F40277D4-FFE3-4382-8FEB-D846FE38ACBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E37C511-DC4A-45AD-9381-0C5A8ECFB4BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E37C511-DC4A-45AD-9381-0C5A8ECFB4BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E37C511-DC4A-45AD-9381-0C5A8ECFB4BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E37C511-DC4A-45AD-9381-0C5A8ECFB4BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAF77D49-BE9D-45F0-99FC-C85E983D8D69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAF77D49-BE9D-45F0-99FC-C85E983D8D69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAF77D49-BE9D-45F0-99FC-C85E983D8D69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAF77D49-BE9D-45F0-99FC-C85E983D8D69}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +60,8 @@ Global
 		{5FE7A5B6-8B09-4108-8B42-B8FC6A62F76A} = {BCEADE03-3332-429C-BC7B-120A57F29908}
 		{37B4DB93-CBD1-41F1-8095-3F08BFDD8400} = {BCEADE03-3332-429C-BC7B-120A57F29908}
 		{F40277D4-FFE3-4382-8FEB-D846FE38ACBD} = {5FE7A5B6-8B09-4108-8B42-B8FC6A62F76A}
+		{8E37C511-DC4A-45AD-9381-0C5A8ECFB4BA} = {37B4DB93-CBD1-41F1-8095-3F08BFDD8400}
+		{BAF77D49-BE9D-45F0-99FC-C85E983D8D69} = {37B4DB93-CBD1-41F1-8095-3F08BFDD8400}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {058045FB-659D-495D-B236-CE654C672105}

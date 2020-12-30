@@ -1,9 +1,10 @@
-﻿using LoanApplications.Domain.Model.InterestRatePolicies;
+﻿using System.Threading.Tasks;
+using LoanApplications.Domain.Model.InterestRatePolicies;
 
 namespace LoanApplications.Domain.Services
 {
     public interface IScoreService
     {
-        Point GetScoreForApplicant(long applicantId);
+        Task<Point> GetScoreForApplicant(long applicantId);
     }
 }
