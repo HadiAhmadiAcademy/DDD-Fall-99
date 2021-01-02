@@ -1,0 +1,10 @@
+﻿{
+  "profiles": {
+    "Framework.OutboxProcessor": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
