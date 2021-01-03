@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Framework.Application" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\LoanApplications.Application.Contracts\LoanApplications.Application.Contracts.csproj" />
     <ProjectReference Include="..\LoanApplications.Domain\LoanApplications.Domain.csproj" />
   </ItemGroup>

@@ -1,7 +1,6 @@
 ﻿using System.Threading.Tasks;
+using Framework.Application;
 using LoanApplications.Application.Contracts;
-using LoanApplications.Application.Framework;
-using LoanApplications.Domain.Model.InterestRatePolicies;
 using LoanApplications.Domain.Model.LoanApplications;
 using LoanApplications.Domain.Services;
 
