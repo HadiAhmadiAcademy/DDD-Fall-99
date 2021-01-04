@@ -34,7 +34,7 @@ namespace Framework.Persistence.EF
         {
             var outboxItems = this.ChangeTracker.Entries()
                                 .Select(a=>a.Entity)
-                                .OfType<IAggregateRoot>()
+                                .OfType<IAggregateChange>()
                                 .SelectMany(a=> a.UncommittedEvents)
                                 .Select(OutboxItemFactory.CreateOutboxItem)
                                 .ToList();
