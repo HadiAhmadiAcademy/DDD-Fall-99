@@ -11,5 +11,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Framework.Domain\Framework.Domain.csproj" />
+    <ProjectReference Include="..\Framework.Persistence\Framework.Persistence.csproj" />
   </ItemGroup>
 </Project>

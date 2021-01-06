@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Framework.Core;
+using Framework.Core.Events;
 using Framework.Domain;
 
 namespace Framework.OutboxProcessor.EventBus
@@ -8,10 +9,4 @@ namespace Framework.OutboxProcessor.EventBus
     {
         void Publish(IEvent @event);
     }
-    public interface IDataStore
-    {
-        List<object> ReadUnsentEvents();
-        void MarkAsSent(object item);
-    }
-
 }

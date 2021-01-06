@@ -1,7 +1,7 @@
-﻿namespace Framework.Core
+﻿namespace Framework.Core.Events
 {
     public interface IEvent
     {
-        
+
     }
 }
