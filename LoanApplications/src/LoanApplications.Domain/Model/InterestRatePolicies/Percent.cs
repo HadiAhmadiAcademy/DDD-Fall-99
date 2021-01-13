@@ -16,5 +16,9 @@ namespace LoanApplications.Domain.Model.InterestRatePolicies
             if (ReferenceEquals(null, other)) return 1;
             return Value.CompareTo(other.Value);
         }
+        public override string ToString()
+        {
+            return $"{Value}%";
+        }
     }
 }

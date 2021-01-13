@@ -1,15 +1,16 @@
 ﻿using Framework.Core.Specifications;
 using Framework.Domain;
+using Scoring.Domain.Model.Applicants;
 
 namespace Scoring.Domain.Model.Rules
 {
     public class Rule : AggregateRoot<int>
     {
         public string Title { get; private set; }
-        public Specification<ApplicantCondition> Criteria { get; private set; }
+        public Specification<Applicant> Criteria { get; private set; }
         public CalculationStrategy Calculation { get; private set; }
         public bool IsActive { get; private set; }
-        public Rule(int id, string title, Specification<ApplicantCondition> criteria)
+        public Rule(int id, string title, Specification<Applicant> criteria)
         {
             Id = id;
             Title = title;
@@ -20,7 +21,7 @@ namespace Scoring.Domain.Model.Rules
         {
             this.Calculation = calculationStrategy;
         }
-        public int Calculate(ApplicantCondition applicant)
+        public int Calculate(Applicant applicant)
         {
             if (Criteria.IsSatisfiedBy(applicant))
                 return this.Calculation.Value;

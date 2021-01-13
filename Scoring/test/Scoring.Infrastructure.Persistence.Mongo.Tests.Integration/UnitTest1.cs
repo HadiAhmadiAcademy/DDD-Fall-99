@@ -6,6 +6,7 @@ using Framework.Persistence.Mongo;
 using MongoDB.Bson.Serialization;
 using MongoDB.Driver;
 using MongoDB.Driver.Core.Misc;
+using Scoring.Domain.Model.Applicants;
 using Scoring.Domain.Model.Rules;
 using Scoring.Domain.Model.Rules.Criterias;
 using Xunit;
@@ -36,14 +37,14 @@ namespace Scoring.Infrastructure.Persistence.Mongo.Tests.Integration
     {
         public void Register()
         {
-            BsonClassMap.RegisterClassMap<Specification<ApplicantCondition>>(map =>
+            BsonClassMap.RegisterClassMap<Specification<Applicant>>(map =>
             {
                 map.AutoMap();
                 map.SetIsRootClass(true);
 
                 map.AddKnownType(typeof(WorkingExperience));
-                map.AddKnownType(typeof(AndSpecification<ApplicantCondition>));
-                map.AddKnownType(typeof(OrSpecification<ApplicantCondition>));
+                map.AddKnownType(typeof(AndSpecification<Applicant>));
+                map.AddKnownType(typeof(OrSpecification<Applicant>));
             });
         }
     }

@@ -21,9 +21,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scoring.Infrastructure.Pers
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{53C62D53-5A86-4639-89A3-D8473FFB5235}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scoring.Application", "src\Scoring.Application\Scoring.Application.csproj", "{F2EB6AF8-F0C1-4C96-B10E-CDFC97FA4725}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scoring.Application", "src\Scoring.Application\Scoring.Application.csproj", "{F2EB6AF8-F0C1-4C96-B10E-CDFC97FA4725}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scoring.Application.Contracts", "src\Scoring.Application.Contracts\Scoring.Application.Contracts.csproj", "{D3908AAD-C39C-4D18-BB80-F55413B2A2DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scoring.Application.Contracts", "src\Scoring.Application.Contracts\Scoring.Application.Contracts.csproj", "{D3908AAD-C39C-4D18-BB80-F55413B2A2DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interface", "Interface", "{2D7AB13B-1055-462B-86FE-D41A94DFD6D5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EventHandlers", "EventHandlers", "{31F8DE1E-BFEF-442E-8759-EDADBA00A5FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scoring.Application.EventHandlers.External", "Scoring.Application.EventHandlers.External\Scoring.Application.EventHandlers.External.csproj", "{A2675E33-D3A7-4BB6-BF4C-EB5A2C66349C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +61,10 @@ Global
 		{D3908AAD-C39C-4D18-BB80-F55413B2A2DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3908AAD-C39C-4D18-BB80-F55413B2A2DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3908AAD-C39C-4D18-BB80-F55413B2A2DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2675E33-D3A7-4BB6-BF4C-EB5A2C66349C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2675E33-D3A7-4BB6-BF4C-EB5A2C66349C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2675E33-D3A7-4BB6-BF4C-EB5A2C66349C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2675E33-D3A7-4BB6-BF4C-EB5A2C66349C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -69,6 +79,9 @@ Global
 		{53C62D53-5A86-4639-89A3-D8473FFB5235} = {D20527A6-DAB7-4778-A527-0FECA150CB6F}
 		{F2EB6AF8-F0C1-4C96-B10E-CDFC97FA4725} = {53C62D53-5A86-4639-89A3-D8473FFB5235}
 		{D3908AAD-C39C-4D18-BB80-F55413B2A2DA} = {53C62D53-5A86-4639-89A3-D8473FFB5235}
+		{2D7AB13B-1055-462B-86FE-D41A94DFD6D5} = {D20527A6-DAB7-4778-A527-0FECA150CB6F}
+		{31F8DE1E-BFEF-442E-8759-EDADBA00A5FF} = {53C62D53-5A86-4639-89A3-D8473FFB5235}
+		{A2675E33-D3A7-4BB6-BF4C-EB5A2C66349C} = {31F8DE1E-BFEF-442E-8759-EDADBA00A5FF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {199BD23D-B0B2-4B14-A65E-E3F3AB286FCF}

@@ -7,4 +7,5 @@ namespace Framework.OutboxProcessor.DataStore
     {
         void ChangeDetected(OutboxItem item);
     }
+
 }

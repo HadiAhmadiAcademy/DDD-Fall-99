@@ -4,6 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Framework.OutboxProcessor.DataStore;
 using Framework.OutboxProcessor.DataStore.Sql;
+using Framework.OutboxProcessor.EventBus;
+using Framework.OutboxProcessor.EventBus.MassTransit;
+using Framework.OutboxProcessor.Types;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
@@ -21,8 +24,15 @@ namespace Framework.OutboxProcessor
                 .ConfigureServices((hostContext, services) =>
                 {
                     services.AddSingleton<IDataStore, SqlDataStore>();
+                    services.AddSingleton<IEventBus, MassTransitBusAdapter>();
                     services.Configure<SqlStoreConfig>(hostContext.Configuration.GetSection("SqlStoreConfig"));
-                    services.AddHostedService<Worker>();
+                    services.Configure<MassTransitConfig>(hostContext.Configuration.GetSection("RabbitMqConnectionString"));
+                    services.AddHostedService<OutboxWorker>();
                 });
+
+        // AddOutboxProcessor()
+        //      .UseMassTransitAsBus(...)
+        //      .ReadFromSqlStore(...);
+        //      .AddEventTransformersFromAssembly( ... );
     }
 }

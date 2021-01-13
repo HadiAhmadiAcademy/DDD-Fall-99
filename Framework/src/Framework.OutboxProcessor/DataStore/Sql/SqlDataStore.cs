@@ -21,7 +21,8 @@ namespace Framework.OutboxProcessor.DataStore.Sql
 
         private void TimerOnElapsed(object sender, ElapsedEventArgs e)
         {
-            Console.WriteLine("salam salam :D");
+            //if (anyNewEventArrived)
+            //      notifyChangeTrackers();
         }
     }
 }
