@@ -2,7 +2,9 @@
 {
     public class SqlStoreConfig
     {
-        public string TableName { get; set; }
+        public string CursorTable { get; set; }
+        public string OutboxTable { get; set; }
         public int PullingInterval { get; set; }
+        public string ConnectionString { get; set; }
     }
 }

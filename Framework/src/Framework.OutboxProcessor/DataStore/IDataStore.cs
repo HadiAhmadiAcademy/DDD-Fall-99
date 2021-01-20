@@ -8,6 +8,7 @@ namespace Framework.OutboxProcessor.DataStore
 {
     public interface IDataStore
     {
-        ISubscription SubscribeForChanges(IDataStoreChangeTracker changeTracker);
+        void SetSubscriber(IDataStoreChangeTracker changeTracker);
+        ISubscription SubscribeForChanges();
     }
 }

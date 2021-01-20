@@ -6,8 +6,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="dapper" Version="2.0.78" />
     <PackageReference Include="MassTransit.RabbitMQ" Version="7.1.2" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="2.0.1" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="3.1.1" />
+    <PackageReference Include="PrivateSetterContractResolver" Version="2.1.0" />
   </ItemGroup>
 
   <ItemGroup>

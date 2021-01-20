@@ -6,11 +6,12 @@ namespace Framework.OutboxProcessor.Setup
 {
     public static class OutboxProcessorServiceExtensions
     {
-        public static OutboxProcessorConfigurator AddOutboxProcessor(this IServiceCollection services, HostBuilderContext hostingContext)
+        public static void AddOutboxProcessor(this IServiceCollection services,
+            HostBuilderContext hostingContext, Action<OutboxProcessorConfigurator> config)
         {
             services.AddHostedService<OutboxWorker>();
             var configurator = new OutboxProcessorConfigurator(services, hostingContext.Configuration);
-            return configurator;
+            config.Invoke(configurator);
         }
     }
 }

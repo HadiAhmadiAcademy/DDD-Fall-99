@@ -12,7 +12,7 @@ namespace Framework.OutboxProcessor.Types
         private Dictionary<string, Type> _types = new Dictionary<string, Type>();
         public void AddTypesFromAssembly(Assembly assembly)
         {
-            var events = assembly.GetTypes().Where(type => type.IsSubclassOf(typeof(IEvent))).ToList();
+            var events = assembly.GetTypes().Where(type => typeof(IEvent).IsAssignableFrom(type)).ToList();
             events.ForEach(a =>
             {
                 _types.Add(a.Name, a);

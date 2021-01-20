@@ -18,7 +18,7 @@ namespace Framework.OutboxProcessor.EventBus.MassTransit
         public Task Publish(IEvent @event)
         {
             if (!isStarted) throw new BusNotStartedException();
-            return _bus.Publish(@event);
+            return _bus.Publish((dynamic)@event);
         }
         public async Task Start()
         {
