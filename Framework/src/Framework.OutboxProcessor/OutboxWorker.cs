@@ -75,7 +75,6 @@ namespace Framework.OutboxProcessor
                 }
             }
         }
-
         private IEvent TransformEvent(IEvent eventToPublish, OutboxItem item)
         {
             var transformer = _transformerLookUp.LookUpTransformer(eventToPublish);

@@ -46,8 +46,8 @@ namespace Framework.OutboxProcessor.DataStore.Sql
                 {
                     _logger.LogInformation($"{items.Count} Events found in outbox");
                     _changeTracker.ChangeDetected(items);
-                    //connection.MovePosition(items.Last().Id, _config.Value.CursorTable);
-                    //_logger.LogInformation($"Cursor moved to position {items.Last().Id}");
+                    connection.MovePosition(items.Last().Id, _config.Value.CursorTable);
+                    _logger.LogInformation($"Cursor moved to position {items.Last().Id}");
                 }
             }
             _timer.Start();
