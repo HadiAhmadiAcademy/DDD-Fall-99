@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="autofac" Version="6.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Scoring.Application.Contracts\Scoring.Application.Contracts.csproj" />
+    <ProjectReference Include="..\Scoring.Application.EventHandlers.External\Scoring.Application.EventHandlers.External.csproj" />
+    <ProjectReference Include="..\Scoring.Application\Scoring.Application.csproj" />
+    <ProjectReference Include="..\Scoring.Domain\Scoring.Domain.csproj" />
+    <ProjectReference Include="..\Scoring.Gateways.RestApi\Scoring.Gateways.RestApi.csproj" />
+    <ProjectReference Include="..\Scoring.Infrastructure.Persistence.Mongo\Scoring.Infrastructure.Persistence.Mongo.csproj" />
+  </ItemGroup>
+
+</Project>

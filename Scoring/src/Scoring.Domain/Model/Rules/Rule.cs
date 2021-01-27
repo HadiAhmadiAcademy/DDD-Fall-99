@@ -1,16 +1,17 @@
-﻿using Framework.Core.Specifications;
+﻿using System;
+using Framework.Core.Specifications;
 using Framework.Domain;
 using Scoring.Domain.Model.Applicants;
 
 namespace Scoring.Domain.Model.Rules
 {
-    public class Rule : AggregateRoot<int>
+    public class Rule : AggregateRoot<Guid>
     {
         public string Title { get; private set; }
         public Specification<Applicant> Criteria { get; private set; }
         public CalculationStrategy Calculation { get; private set; }
         public bool IsActive { get; private set; }
-        public Rule(int id, string title, Specification<Applicant> criteria)
+        public Rule(Guid id, string title, Specification<Applicant> criteria)
         {
             Id = id;
             Title = title;

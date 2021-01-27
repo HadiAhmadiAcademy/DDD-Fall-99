@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 using Scoring.Application.Contracts;
 using Scoring.Application.Contracts.Rules;
 using Scoring.Domain.Model.Rules;
@@ -12,21 +13,20 @@ namespace Scoring.Application
         {
             _repository = repository;
         }
-        public async Task<int> DefineRule(DefineRuleCommand command)
+        public async Task DefineRule(DefineRuleCommand command)
         {
-            var id = 1;     //TODO: remove hard-coded id
+            var id = Guid.NewGuid();
             var criteria = CriteriaMapper.Map(command.Criteria);
-            var rule = new Rule(1, command.Title, criteria);
+            var rule = new Rule(id, command.Title, criteria);
             await _repository.Add(rule);
-            return id;
         }
 
-        public Task DeactivateRule(int id)
+        public Task DeactivateRule(Guid id)
         {
             throw new System.NotImplementedException();
         }
 
-        public Task ActivateRule(int id)
+        public Task ActivateRule(Guid id)
         {
             throw new System.NotImplementedException();
         }

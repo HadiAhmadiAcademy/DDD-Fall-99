@@ -13,7 +13,7 @@ namespace Scoring.Domain.Tests.Unit
         public void Test1()
         {
             var spec = new WorkingExperience(TimeSpan.FromDays(365));
-            var rule = new Rule(1,"x", spec);
+            var rule = new Rule(Guid.NewGuid(), "x", spec);
 
             rule.SetCalculation(CalculationStrategy.DecreasePointsTo(10));
         }

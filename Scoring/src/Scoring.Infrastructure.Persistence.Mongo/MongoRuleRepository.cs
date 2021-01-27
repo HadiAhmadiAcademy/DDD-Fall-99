@@ -8,7 +8,7 @@ using Scoring.Domain.Model.Rules;
 
 namespace Scoring.Infrastructure.Persistence.Mongo
 {
-    public class MongoRuleRepository : MongoRepository<Rule, int>, IRuleRepository
+    public class MongoRuleRepository : MongoRepository<Rule, Guid>, IRuleRepository
     {
         public MongoRuleRepository(IMongoDatabase database) : base(database) { }
 
@@ -17,14 +17,14 @@ namespace Scoring.Infrastructure.Persistence.Mongo
             return AggregateCollection.InsertOneAsync(rule);
         }
 
-        public Task<Rule> Get(int id)
+        public Task<Rule> Get(Guid id)
         {
             return AggregateCollection.Find(a => a.Id == id).FirstOrDefaultAsync();
         }
 
         public Task<List<Rule>> GetActiveRules()
         {
-            return AggregateCollection.Find(a => a.IsActive == true).ToListAsync();
+            return AggregateCollection.Find(a => a.IsActive).ToListAsync();
         }
     }
 }
