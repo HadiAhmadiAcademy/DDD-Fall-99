@@ -8,4 +8,8 @@
     <PackageReference Include="masstransit" Version="7.1.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Scoring.Application.Contracts\Scoring.Application.Contracts.csproj" />
+  </ItemGroup>
+
 </Project>
