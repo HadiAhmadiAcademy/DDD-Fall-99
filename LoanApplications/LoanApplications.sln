@@ -19,11 +19,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoanApplications.Infrastructure.ACL.Scoring", "src\LoanApplications.Infrastructure.ACL.Scoring\LoanApplications.Infrastructure.ACL.Scoring.csproj", "{F40277D4-FFE3-4382-8FEB-D846FE38ACBD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoanApplications.Application", "src\LoanApplications.Application\LoanApplications.Application.csproj", "{8E37C511-DC4A-45AD-9381-0C5A8ECFB4BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoanApplications.Application", "src\LoanApplications.Application\LoanApplications.Application.csproj", "{8E37C511-DC4A-45AD-9381-0C5A8ECFB4BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoanApplications.Application.Contracts", "src\LoanApplications.Application.Contracts\LoanApplications.Application.Contracts.csproj", "{BAF77D49-BE9D-45F0-99FC-C85E983D8D69}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoanApplications.Application.Contracts", "src\LoanApplications.Application.Contracts\LoanApplications.Application.Contracts.csproj", "{BAF77D49-BE9D-45F0-99FC-C85E983D8D69}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoanApplications.Persistence.EF", "src\LoanApplications.Persistence.EF\LoanApplications.Persistence.EF.csproj", "{5A2CE667-37BC-44A9-9B6C-9FF5C195159A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoanApplications.Persistence.EF", "src\LoanApplications.Persistence.EF\LoanApplications.Persistence.EF.csproj", "{5A2CE667-37BC-44A9-9B6C-9FF5C195159A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "jobs", "jobs", "{1ACEBE24-6B7B-4C7B-A1C0-B3E0E5A4C036}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoanApplications.OutboxProcessor", "jobs\LoanApplications.OutboxProcessor\LoanApplications.OutboxProcessor.csproj", "{22A69BE8-D5B8-4CF8-B6FB-0D2603EA4BE5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +59,10 @@ Global
 		{5A2CE667-37BC-44A9-9B6C-9FF5C195159A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A2CE667-37BC-44A9-9B6C-9FF5C195159A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A2CE667-37BC-44A9-9B6C-9FF5C195159A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22A69BE8-D5B8-4CF8-B6FB-0D2603EA4BE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22A69BE8-D5B8-4CF8-B6FB-0D2603EA4BE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22A69BE8-D5B8-4CF8-B6FB-0D2603EA4BE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22A69BE8-D5B8-4CF8-B6FB-0D2603EA4BE5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -69,6 +77,7 @@ Global
 		{8E37C511-DC4A-45AD-9381-0C5A8ECFB4BA} = {37B4DB93-CBD1-41F1-8095-3F08BFDD8400}
 		{BAF77D49-BE9D-45F0-99FC-C85E983D8D69} = {37B4DB93-CBD1-41F1-8095-3F08BFDD8400}
 		{5A2CE667-37BC-44A9-9B6C-9FF5C195159A} = {5FE7A5B6-8B09-4108-8B42-B8FC6A62F76A}
+		{22A69BE8-D5B8-4CF8-B6FB-0D2603EA4BE5} = {1ACEBE24-6B7B-4C7B-A1C0-B3E0E5A4C036}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {058045FB-659D-495D-B236-CE654C672105}

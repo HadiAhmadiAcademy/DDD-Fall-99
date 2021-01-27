@@ -68,7 +68,7 @@ class Build : NukeBuild
                     a.SetProject(project)
                         .EnableNoBuild()
                         .EnableNoRestore()
-                        .SetVersion("1.0.0")
+                        .SetVersion("1.0.1")                    //TODO: use git version (just for test purpose)
                         .SetOutputDirectory(ArtifactsPath)
                     );
             }
