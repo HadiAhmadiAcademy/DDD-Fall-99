@@ -7,7 +7,6 @@ using Framework.OutboxProcessor.DataStore.Sql;
 using Framework.OutboxProcessor.EventBus;
 using Framework.OutboxProcessor.EventBus.MassTransit;
 using Framework.OutboxProcessor.Setup;
-using Framework.OutboxProcessor.TestEvents;
 using Framework.OutboxProcessor.Types;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;

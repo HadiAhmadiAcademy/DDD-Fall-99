@@ -11,7 +11,6 @@ namespace Scoring.Config
         {
             services.AddMassTransit(x =>
             {
-                //x.AddConsumers(typeof(EmployeeProfileCompletedHandler).Assembly);
                 x.AddConsumer<EmployeeProfileCompletedHandler>();
                 x.UsingRabbitMq((context, cfg) =>
                 {

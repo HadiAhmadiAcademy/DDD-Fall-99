@@ -9,6 +9,7 @@ using MongoDB.Driver.Core.Misc;
 using Scoring.Domain.Model.Applicants;
 using Scoring.Domain.Model.Rules;
 using Scoring.Domain.Model.Rules.Criterias;
+using Scoring.Infrastructure.Persistence.Mongo.Repositories;
 using Xunit;
 
 namespace Scoring.Infrastructure.Persistence.Mongo.Tests.Integration

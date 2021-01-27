@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 using Framework.Persistence.Mongo;
 using MongoDB.Driver;
 using Scoring.Domain.Model.Rules;
 
-namespace Scoring.Infrastructure.Persistence.Mongo
+namespace Scoring.Infrastructure.Persistence.Mongo.Repositories
 {
     public class MongoRuleRepository : MongoRepository<Rule, Guid>, IRuleRepository
     {
